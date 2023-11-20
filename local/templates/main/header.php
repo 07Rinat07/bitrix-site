@@ -86,7 +86,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                             <div class="col-md-2 col-sm-3 col-xs-8">
                                 <div class="logo ptb-22">
                                     <a href="index.html">
-                                        <img src="img/logo/logo.png" alt="main logo">
+                                        <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/logo/logo.png" alt="main logo">
                                     </a>
                                 </div>
                             </div>
