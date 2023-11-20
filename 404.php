@@ -16,5 +16,5 @@ $APPLICATION->IncludeComponent("bitrix:main.map", ".default", Array(
 	"CACHE_TIME"	=>	"36000000"
 	)
 );
-
+echo 404; //временно-удалить позже
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
