@@ -1195,3 +1195,9 @@
 2023-11-20 21:45:34 -  - exec CUpdateClient::GetHTTPPage
 2023-11-20 21:45:35 -  - TIME GetUpdatesList(request) 0.951 sec
 2023-11-20 21:45:35 -  - exec CUpdateClient::ParseServerData
+2023-11-20 22:31:20 -  - exec CUpdateClient::GetUpdatesList
+2023-11-20 22:31:20 -  - exec CUpdateClient::CollectRequestData
+2023-11-20 22:31:20 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=23.600.0&VERSION=23.675.0&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&SERVER_NAME=&CHHB=localhost%3A8080&CSAB=&SUID=gifkxcll2n5j7gcel9wdpe7foxdwrohq&CANGZIP=Y&CLIENT_PHPVER=8.0.30&stable=Y&mbfo=0&NGINX=Y&SMD=N&rerere=Y&bitm_main=23.675.0&bitm_seo=23.300.300&bitm_b24connector=22.0.0&bitm_socialservices=22.200.400&bitm_landing=23.900.300&bitm_messageservice=23.100.0&bitm_subscribe=21.0.0&bitm_iblock=23.200.0&bitm_bitrixcloud=22.100.0&bitm_perfmon=23.0.0&bitm_forum=23.250.0&bitm_blog=22.0.0&bitm_mobileapp=23.100.100&bitm_search=22.100.0&bitm_security=23.0.0&bitm_translate=23.300.0&bitm_ui=23.350.0&bitm_clouds=23.100.0&bitm_fileman=23.100.100&bitm_rest=23.200.150&bitm_scale=21.0.0&bitm_vote=23.200.0&bitm_location=23.100.0&bitm_form=22.0.0&bitm_photogallery=23.0.0&bitm_highloadblock=23.0.0&bitl_ru=&bitl_en=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2023-11-20 22:31:20 -  - exec CUpdateClient::GetHTTPPage
+2023-11-20 22:31:21 -  - TIME GetUpdatesList(request) 0.872 sec
+2023-11-20 22:31:21 -  - exec CUpdateClient::ParseServerData
