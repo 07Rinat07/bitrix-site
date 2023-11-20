@@ -1,11 +1,11 @@
 <?
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
+use Bitrix\Main\Page\Asset;
 ?>
         <!DOCTYPE html>
         <html class="no-js" lang="en">
         <head>
-            <?$APPLICATION->ShowHead();?>
             <meta http-equiv="x-ua-compatible" content="ie=edge">
             <title><?$APPLICATION->ShowTitle();?></title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,32 +13,23 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
             <!-- Шрифты -->
             <!-- google fonts -->
             <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-
             <!-- Стили (CSS) -->
             <!-- bootstrap css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/bootstrap.min.css">
-            <!-- bootstrap css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/owl.carousel.css">
-            <!-- animate-text css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/animate-text.css">
-            <!-- magnific-popup css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/magnific-popup.css">
-            <!-- et-line fonts css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/et-line.css">
-            <!-- pe-icon-7-stroke fonts css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/pe-icon-7-stroke.css">
-            <!-- Theme shortcodes/elements style -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/shortcode/shortcodes.css">
-            <!-- meanmenu css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/meanmenu.min.css">
-            <!-- font-awesome css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/font-awesome.min.css">
-            <!-- style css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/style.css">
-            <!-- responsive css -->
-            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/responsive.css">
-            <!-- modernizr js -->
-            <script src="<?=SITE_TEMPLATE_PATH ?>/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+            <?php
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/bootstrap.min.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/owl.carousel.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/animate-text.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/magnific-popup.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/et-line.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/pe-icon-7-stroke.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/shortcode/shortcodes.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/meanmenu.min.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/font-awesome.min.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/style.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/responsive.css');
+            Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/js/vendor/modernizr-2.8.3.min.js');
+            ?>
+            <?$APPLICATION->ShowHead();?>
         </head>
         <body>
         <div id="panel">
